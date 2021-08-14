@@ -48,7 +48,7 @@ namespace D365Extensions.Account
             }
             catch (Exception e)
             {
-
+                tracingService.Trace($"{this.GetType().Name} Error: {0}", ex.ToString());
                 throw;
             }
         }
